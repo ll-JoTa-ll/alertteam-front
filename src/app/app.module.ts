@@ -18,6 +18,8 @@ import { HeaderComponent } from './components/header/header.component';
 import {FormsModule} from '@angular/forms';
 import { BarraEstadisticaComponent } from './components/barra-estadistica/barra-estadistica.component';
 import { CardAlertComponent } from './components/card-alert/card-alert.component';
+import { HomeComponent } from './components/home/home.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { CardAlertComponent } from './components/card-alert/card-alert.component
     DashboardComponent,
     HeaderComponent,
     BarraEstadisticaComponent,
-    CardAlertComponent
+    CardAlertComponent,
+    HomeComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
