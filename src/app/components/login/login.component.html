@@ -5,9 +5,9 @@
           <img src="./assets/image-luis/logo.png"/>
       </div>
       
-      <input type="text" class="form-control" name="username" placeholder="email" required="" autofocus="" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>    
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+      <input [(ngModel)]="model.email" type="text" class="form-control" name="username" placeholder="email" required="" autofocus="" />
+      <input [(ngModel)]="model.password" type="password" class="form-control" name="password" placeholder="Password" required=""/>
+      <button (click)="login()" class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
       <!-- <div class="crear_cuenta">
         <p class="message">No estas registrado? <a href="/register">Crea una cuenta</a></p>
       </div> -->
