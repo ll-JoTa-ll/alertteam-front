@@ -7,6 +7,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/shared/menu/menu.component';
@@ -15,6 +16,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import {FormsModule} from '@angular/forms';
+import { BarraEstadisticaComponent } from './components/barra-estadistica/barra-estadistica.component';
+import { CardAlertComponent } from './components/card-alert/card-alert.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import {FormsModule} from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    BarraEstadisticaComponent,
+    CardAlertComponent
   ],
   imports: [
     BrowserModule,
