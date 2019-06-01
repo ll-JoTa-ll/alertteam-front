@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   gotoAlertas() {
-    this.router.navigate(['/card-alert']);
+    this.router.navigate(['/dashboard']);
   }
 
 }

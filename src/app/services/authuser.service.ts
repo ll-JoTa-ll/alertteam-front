@@ -43,7 +43,7 @@ export class AuthuserService {
       .then(value => {
         console.log('Nice, it worked!');
         console.log(value);
-        this.router.navigate(['/card-alert']);
+        this.router.navigate(['/dashboard']);
       })
       .catch(err => {
         console.log('Something went wrong:', err.message);
