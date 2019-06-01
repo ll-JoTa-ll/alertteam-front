@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertaInterface } from '../../models/alerta';
+import { AlertasService } from '../../services/alertas.service';
 
 @Component({
   selector: 'app-card-alert',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardAlertComponent implements OnInit {
 
-  constructor() { }
+  listAlretas: any[];
+
+  constructor(
+    private alertasService: AlertasService
+  ) { }
 
   ngOnInit() {
+    this.getAlertas();
+  }
+
+  getAlertas() {
+    this.alertasService.getAlertas().subscribe(data => {
+      this.listAlretas = data;
+      console.log(this.listAlretas);
+    });
   }
 
 }
